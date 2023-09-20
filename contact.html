@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="MP1.css">
+</head>
+<body id="index">
+<div class="page-wrapper">
+<!-- Header -->
+  <div class="header panel">
+    <div class="navigation">
+      <ul id="navbar">
+        <li id="nav-home"><a href="index.html">HOME</a></li>
+        <li id="nav-about"><a href="about.html">ABOUT</a></li>
+        <li id="nav-resume"><a href="resume.html">RESUME</a></li>
+        <li id="nav-contact"><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="text-container strong-text">
+        <p>CONTACT<span id="colored-text">&nbsp;ME</span>.</p>
+      </div>
+    </div>
+  <!-- Content -->
+    <div class="content panel">
+      <div class="content-child">
+        <div class="carousel-container">
+          <div class="carousel-item-wide-left flex-column auto-width-margin">
+            <div class="descriptor-text">
+              <p>Send me a message here!</p>
+            </div>
+            <div class="contact-form">
+              <form>
+                <span class="mini-text">Name:</span><br/>
+                <input type="text" id="sender-name" name="sender-name">
+                <span class="mini-text">Message:</span><br/>
+                <textarea name="sender-message" rows="15" cols="55"></textarea>
+                <input class="button-flat" type="submit" onClick="alert('Your message has been submitted!')" value="Submit">
+                <input class="button-flat" type="reset" value="Reset">
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item-l-r carousel-right">
+            <img class="img-circle" src="img/Ppic.jpg" alt="Paulo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Social Media Links -->
+  <div class="media-container panel">
+    <div class="media-links">
+      <a href="www.facebook.com" target="_blank"><img class="links" src="img/facebook.svg" alt="facebook"/></a>
+      <a href="www.instagram.com" target="_blank"><img class="links" src="img/instagram.svg" alt="Instagram"/></a>
+      <a href="www.twitter.com" target="_blank"><img class="links" src="img/twitter.svg" alt="Twitter"/></a>
+      <a href="www.google.com" target="_blank"><img class="links" src="img/google-plus.svg" alt="Google Plus"/></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
