@@ -8,16 +8,13 @@
 }
 /* Top Level Styles */
 * {
-  -webkit-animation-transition: all .7s;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 html {
   background: #fff;
+  scroll-behavior: smooth;
 }
 div {
-  display: -webkit-flex;
   display: flex;
 }
 /* Block Elements */
@@ -38,7 +35,7 @@ div {
 }
 .header {
   height: 300px;
-  background-image: url(img/taal1.png);
+  background-image: url(img/index_header_bg.png);
 }
 .navigation {
   position: absolute;
@@ -55,7 +52,6 @@ div {
   height: 761;
 }
 .content-child {
-  -webkit-flex-direction: column;
   flex-direction: column;
   background-color: #fff;
   margin: 0;
@@ -235,11 +231,11 @@ input[type=text], textarea{
   background: #fff;
 }
 /*Color navigation item of active tab */
-#home #nav-home a, #gallery #nav-gallery a, #about #nav-about a, #resume #nav-resume a, #contact #nav-contact a {
+#home #nav-home a, #about #nav-about a, #resume #nav-resume a, #contact #nav-contact a {
   color: #000;
   background: #fff;
 }
-#home #nav-home a:hover, #gallery #nav-gallery a:hover, #about #nav-about a:hover, #resume #nav-resume a:hover, #contact #nav-contact a:hover {
+#home #nav-home a:hover, #about #nav-about a:hover, #resume #nav-resume a:hover, #contact #nav-contact a:hover {
   color: #000;
   background: #fff;
 }
@@ -254,6 +250,12 @@ a:link, a:visited, a:hover, a:active, active:visited {
   text-decoration: none;
   color: inherit;
 }
-#home.loaded, #gallery.loaded, #about.loaded, #resume.loaded, #contact.loaded {
+#home.loaded, #about.loaded, #resume.loaded, #contact.loaded {
   opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="carousel"] {
+    width: 100%;
+  }
 }
